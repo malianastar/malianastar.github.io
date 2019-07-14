@@ -1,0 +1,101 @@
+/* BACKGROUND */
+body {
+  background: url('/img/crossword.png') repeat;
+}
+
+/* GENERAL STYLES */
+a {
+    color: #61B7F2;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    border-top: 3px solid #72C8F3;
+    background-color: #343434;
+}
+
+/* NAV STYLES */
+.navbar .nav-collapse .nav .active > a,
+.navbar .nav-collapse .nav .active > a:hover,
+.navbar .nav-collapse.in > .nav li.active > a,
+.navbar .nav-collapse.in > .nav li.active > a:hover,
+.navbar .nav-collapse.in > .nav li > a:hover,
+.cta.nav a {
+    border: 1px solid #dedede;
+    background-color: #61B7F2;
+}
+
+.navbar .nav-collapse .nav .active > a:hover,
+.navbar .nav-collapse.in > .nav li.active > a:hover {
+    //border: 1px solid #000080;
+}
+
+.cta.nav a:hover {
+    border: 1px solid #000080;
+    background-color: #72C8F3;
+}
+
+.navbar .nav > li > a:hover {
+    border-color: #61B7F2;
+    padding-bottom:5px;
+}
+
+.navDivider {
+    margin: 10px 0 0 0;
+    border-color: #61B7F2;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    border-right: 1px solid #eee;
+    padding:10px;
+}
+
+.sidebar hr {
+    border: 1px solid #eee;
+}
+
+/* FORM STYLES */
+label.error {
+  margin-top: 3px;
+  color: #b81007;
+}
+input.error, textarea.error {
+  border-color: #b81007;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(184, 16, 7,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(184, 16, 7,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(184, 16, 7,.6);
+}
+
+/* HOME STYLES */
+.information h3 { margin: 0; }
+.information .span4 { padding-left: 10px; border-left: 1px solid #CDCDCD; }
+
+/* TARIFF STYLES */
+.check-availability { width: 160px; }
+
+/* LOCALISATION STYLES */
+.localisation #map-canvas {
+     width: 500px;
+     height: 400px;
+     background-color: #CCC;
+}
+
+/* TRIP ADVISOR STYLES */
+.trip-advisor {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.TA_excellent {
+    float: left;
+}
+
+.booking_award {
+    margin-top: 10px;
+    float:left;
+}
