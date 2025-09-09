@@ -217,23 +217,35 @@ $(function(){
 *	start slider
 *
 **************************/
-jQuery(window).load(function(){
-	jQuery("#nivoslider-125").nivoSlider({
-		effect:"fade",
-		slices:15,
-		boxCols:8,
-		boxRows:4,
-		animSpeed:400,
-		pauseTime:2500,
-		startSlide:0,
-		directionNav:true,
-		controlNav:true,
-		controlNavThumbs:false,
-		pauseOnHover:true,
-		manualAdvance:false
-	});
-	$('.slider-wrapper').css('min-height', 'auto');
-	$('.nivoSlider').css('min-height', 'auto');
+jQuery(function ($) {
+  // Keep the fallback visible; hide the slider until Nivo finishes init
+  $('#nivoslider-125').hide();
+
+  $(window).on('load', function () {
+    $('#nivoslider-125').nivoSlider({
+      effect: "fade",
+      slices: 15,
+      boxCols: 8,
+      boxRows: 4,
+      animSpeed: 400,
+      pauseTime: 2500,
+      startSlide: 0,
+      directionNav: true,
+      controlNav: true,
+      controlNavThumbs: false,
+      pauseOnHover: true,
+      manualAdvance: false,
+
+      // When the slider is ready, hide the fallback and reveal the slider
+      afterLoad: function () {
+        $('.slider-fallback').hide();
+        $('#nivoslider-125').show();
+      }
+    });
+
+    $('.slider-wrapper').css('min-height', 'auto');
+    $('.nivoSlider').css('min-height', 'auto');
+  });
 });
 
 // DOMContentLoaded
